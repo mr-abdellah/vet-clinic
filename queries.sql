@@ -9,6 +9,19 @@ SELECT * FROM animals WHERE neutered = TRUE;
 SELECT * FROM animals WHERE name <> 'Gabumon';
 SELECT * FROM animals WHERE round(weight_kg::numeric, 2) >= 10.23 AND round(weight_kg::numeric, 2) <= 17.3;
 
+-- 
+BEGIN;
+update animals set species = 'unspecified';
+rollback;
+-- 
+BEGIN;
+update animals set species = 'digmon' where name like '%mon';
+update animals set species = 'pokemon' where species is NULL;
+commit;
+-- 
+BEGIN;
+delete from animals;
+rollback;
 -- spicies questions 
 select COUNT(*) from animals;
 select COUNT(*) from animals where escape_attempts = 0;
