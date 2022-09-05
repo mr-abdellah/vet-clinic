@@ -16,6 +16,9 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - GitHub: [@mr-abdellah](https://github.com/mr-abdellah)
 - LinkedIn: [@belkaiduus](https://www.linkedin.com/in/belkaidus/)
 
+👤 **Abel Desalegn**
+-  Github: [@Abel-desu](https://github.com/Abel-desu)
+- LinkedIn: [Abeldesalegn](https://www.linkedin.com/in/abel-desalegn)
 
 ## 🤝 Contributing
 
