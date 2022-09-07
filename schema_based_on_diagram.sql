@@ -46,3 +46,9 @@ CREATE TABLE treatments_medical_histories(
 );
 
 
+CREATE INDEX medical_histories_patient ON medical_histories (patient_id);
+CREATE INDEX invoice_medical_history ON invoices (medical_history_id);
+CREATE INDEX invoice_items_invoice ON invoice_items (invoice_id);
+CREATE INDEX invoice_items_treatment ON invoice_items (treatment_id);
+CREATE INDEX treatments_medical_histories_medical_history ON treatments_medical_histories (medical_history_id);
+CREATE INDEX treatments_medical_histories_treatment ON treatments_medical_histories (treatment_id);
